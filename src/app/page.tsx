@@ -1,5 +1,6 @@
 ﻿import Image from 'next/image';
 import heroArtwork from '../../public/brand/derived/kairos-hourglass-crisp.png';
+import wordmark from '../../public/brand/derived/kairos-interface-tech-wordmark.png';
 import { ResponsiveNavigation } from '@/components/ui/responsive-navigation';
 import { ButtonLink } from '@/components/ui/button-link';
 import { Section } from '@/components/ui/section';
@@ -23,7 +24,13 @@ export default function HomePage() {
       <ResponsiveNavigation
         brand={
           <a href="#home" className="brand" aria-label="KAIROS home">
-            KAIROS<span>INTERFACE TECH</span>
+            <Image
+              src={wordmark}
+              alt="KAIROS | Interface Tech"
+              unoptimized
+              sizes="(max-width: 767px) 144px, 160px"
+              className="brand-wordmark"
+            />
           </a>
         }
         items={navigation}
@@ -57,13 +64,16 @@ export default function HomePage() {
               </p>
             </div>
             <figure className="hero-artwork">
-              <Image
-                src={heroArtwork}
-                alt="KAIROS — the luminous hourglass-shaped K"
-                sizes="(max-width: 767px) min(100vw - 40px, 440px), (max-width: 1100px) 44vw, 560px"
-                preload
-                className="hero-symbol"
-              />
+              <div className="hero-stage">
+                <div className="hero-ground" aria-hidden="true" />
+                <Image
+                  src={heroArtwork}
+                  alt="KAIROS — the luminous hourglass-shaped K"
+                  sizes="(max-width: 767px) min(100vw - 40px, 440px), (max-width: 1100px) 44vw, 560px"
+                  preload
+                  className="hero-symbol"
+                />
+              </div>
               <figcaption className="artwork-caption">
                 <span className="artwork-dot" /> A moment of possibility.
               </figcaption>
@@ -196,7 +206,13 @@ export default function HomePage() {
         <div className="container">
           <div className="footer-top">
             <a href="#home" className="brand" aria-label="KAIROS home">
-              KAIROS<span>INTERFACE TECH</span>
+              <Image
+                src={wordmark}
+                alt="KAIROS | Interface Tech"
+                unoptimized
+                sizes="(max-width: 767px) 144px, 160px"
+                className="brand-wordmark"
+              />
             </a>
             <p>Every great idea has its moment.</p>
             <a className="back-top" href="#home">

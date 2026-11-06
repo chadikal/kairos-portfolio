@@ -2,6 +2,10 @@
 
 Date: 2026-11-06. Runtime: existing Node.js 22.20.0 and npm 10.9.3 on Windows. The runtime was selected in command-local PATH only. No global runtime, credentials, or toolkit configuration were changed.
 
+## Brand fidelity and hero lighting follow-up
+
+See [the current report](BRAND_FIDELITY_AND_LIGHTING.md) for the supplied bitmap wordmark, lossless crop verification, reference-inspired ground lighting, quality checks and limited desktop browser inspection. The approved page atmosphere and spacing remain unchanged. Mobile/tablet, exact viewport sizes, footer and reduced-motion browser review remain pending; the Chrome window was minimized during responsive inspection and the available controls could not restore it. No deployment or new milestone.
+
 ## Milestone 1.3 visual corrections
 
 The initial milestone is not visually accepted. See [the correction report](M13_VISUAL_CORRECTIONS.md) for source-confirmed findings, completed code/HTTP checks, missing screenshot comparison, and the outstanding browser/device review. No Milestone 1.4 or deployment. The custom favicon is verified in served metadata and source-identical responses; actual browser-tab selection remains unverified.

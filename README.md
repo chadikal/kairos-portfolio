@@ -27,8 +27,8 @@ No environment variables are required for local use. Copy `.env.example` to `.en
 
 ## Homepage
 
-- Responsive navigation with the restored white KAIROS wordmark and INTERFACE TECH subtitle, mobile menu, contact CTA, and skip link.
-- Hero with a separately saved, crisp transparent cutout of the supplied hourglass K artwork and both primary actions.
+- Responsive navigation and footer with the supplied silver KAIROS / INTERFACE TECH bitmap wordmark, mobile menu, contact CTA, and skip link.
+- Hero with the existing crisp transparent hourglass K, contact-point ground lighting, and both primary actions.
 - Selected Work: explicitly labeled Techblade and Bon Marché placeholders, plus a future-project slot.
 - Four focused frontend services.
 - Clean, text-only About section with a personal introduction, direct client communication, and the meaning of KAIROS.
