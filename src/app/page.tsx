@@ -1,5 +1,6 @@
 ﻿import Image from 'next/image';
-import fullLogo from '../../public/brand/Kairos-Logo.jpeg';
+import wordmark from '../../public/brand/KAIROS-Horizontal-Wordmark-Logo.png';
+import heroArtwork from '../../public/brand/Kairos-favicon.png';
 import compactLogo from '../../public/brand/Kairos-Hourglass-K-Standalone-logo.jpeg';
 import { ResponsiveNavigation } from '@/components/ui/responsive-navigation';
 import { ButtonLink } from '@/components/ui/button-link';
@@ -23,8 +24,14 @@ export default function HomePage() {
       </a>
       <ResponsiveNavigation
         brand={
-          <a href="#home" className="brand" aria-label="KAIROS home">
-            KAIROS<span>INTERFACE TECH</span>
+          <a href="#home" className="nav-brand" aria-label="KAIROS home">
+            <Image
+              src={wordmark}
+              alt="KAIROS"
+              loading="eager"
+              sizes="(max-width: 767px) 148px, 192px"
+              className="nav-wordmark"
+            />
           </a>
         }
         items={navigation}
@@ -58,16 +65,12 @@ export default function HomePage() {
               </p>
             </div>
             <figure className="hero-artwork">
-              <div className="artwork-topline technical">
-                <span>DESIGN → EXPERIENCE</span>
-                <span>KA / 01</span>
-              </div>
               <Image
-                src={fullLogo}
-                alt="KAIROS Interface Tech — a luminous K combined with an hourglass"
-                sizes="(max-width: 767px) 90vw, 46vw"
+                src={heroArtwork}
+                alt="KAIROS — the luminous hourglass-shaped K"
+                sizes="(max-width: 767px) min(100vw - 40px, 440px), (max-width: 1100px) 44vw, 560px"
                 preload
-                className="full-logo"
+                className="hero-symbol"
               />
               <figcaption className="artwork-caption">
                 <span className="artwork-dot" /> A moment of possibility.

@@ -1,4 +1,4 @@
-﻿# KAIROS | Interface Tech
+# KAIROS | Interface Tech
 
 The official portfolio foundation for Chadi's independent frontend development brand.
 
@@ -27,8 +27,8 @@ No environment variables are required for local use. Copy `.env.example` to `.en
 
 ## Homepage
 
-- Responsive navigation, mobile menu, contact CTA, and skip link.
-- Hero with the official full KAIROS artwork and both primary actions.
+- Responsive navigation with the official horizontal neon wordmark, mobile menu, contact CTA, and skip link.
+- Hero with the official transparent, border-free hourglass K artwork and both primary actions.
 - Selected Work: explicitly labeled Techblade and Bon Marché placeholders, plus a future-project slot.
 - Four focused frontend services.
 - Personal introduction, direct client communication, and the meaning of KAIROS.
@@ -59,4 +59,4 @@ See [asset inventory](docs/ASSETS.md) for source roles and preservation details.
 
 ## Verification and next milestone
 
-See [verification](docs/VERIFICATION.md) for executed checks and remaining manual review. Before publication, supply approved project material, professional contact links, and the final domain. Then refine the case studies and complete device, keyboard, screen-reader, and visual review. Deployment is a separate milestone.
+See [verification](docs/VERIFICATION.md) for executed checks and remaining manual review. [Milestone 1.1](docs/MILESTONE_1_1.md) records visual refinements, asset transparency, and the pending browser review at 320, 390, 768, 1024, and 1440px. Before publication, supply approved project material, professional contact links, and the final domain. Then refine the case studies and complete device, keyboard, screen-reader, and visual review. Deployment is a separate milestone.

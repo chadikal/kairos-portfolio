@@ -1,6 +1,10 @@
-﻿# Milestone 1 verification
+# Milestone 1 verification
 
 Date: 2026-11-06. Runtime: existing Node.js 22.20.0 and npm 10.9.3 on Windows. The runtime was selected in command-local PATH only. No global runtime, credentials, or toolkit configuration were changed.
+
+## Milestone 1.1 follow-up
+
+The navbar/hero asset treatment, heading tokens, and section rhythm were refined. Required checks and a fresh production smoke check passed. See [the refinement report](MILESTONE_1_1.md) for exact scope, contrast calculations, unchanged original-asset checks, and browser verification limitations at all five requested widths. No deployment performed.
 
 ## Executed checks
 
