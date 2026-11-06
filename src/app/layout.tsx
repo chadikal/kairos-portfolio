@@ -56,8 +56,26 @@ export const metadata: Metadata = {
   },
   robots: { index: false, follow: false },
   icons: {
-    icon: [{ url: '/icon.png', type: 'image/png' }],
-    apple: '/apple-icon.png',
+    icon: [
+      {
+        url: '/brand/derived/kairos-favicon-v3.svg',
+        type: 'image/svg+xml',
+        sizes: 'any',
+      },
+      {
+        url: '/brand/derived/kairos-favicon-v3-32.png',
+        type: 'image/png',
+        sizes: '32x32',
+      },
+      {
+        url: '/brand/derived/kairos-favicon-v3-16.png',
+        type: 'image/png',
+        sizes: '16x16',
+      },
+    ],
+    apple: [
+      { url: '/brand/derived/kairos-favicon-v3-180.png', sizes: '180x180' },
+    ],
   },
 };
 export default function RootLayout({ children }: { children: ReactNode }) {

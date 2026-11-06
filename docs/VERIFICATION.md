@@ -2,6 +2,10 @@
 
 Date: 2026-11-06. Runtime: existing Node.js 22.20.0 and npm 10.9.3 on Windows. The runtime was selected in command-local PATH only. No global runtime, credentials, or toolkit configuration were changed.
 
+## Milestone 1.3 visual corrections
+
+The initial milestone is not visually accepted. See [the correction report](M13_VISUAL_CORRECTIONS.md) for source-confirmed findings, completed code/HTTP checks, missing screenshot comparison, and the outstanding browser/device review. No Milestone 1.4 or deployment. The custom favicon is verified in served metadata and source-identical responses; actual browser-tab selection remains unverified.
+
 ## Milestone 1.3 follow-up
 
 Reduced the baked-in hero halo using the original as a detail reference, added a continuous static CSS atmosphere, and aligned About heading caps on desktop. See [Milestone 1.3](MILESTONE_1_3.md) for the latest checks, contrast bound, artwork proofs, and browser-verification limits.

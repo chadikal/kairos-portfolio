@@ -135,7 +135,6 @@ export default function HomePage() {
             <div className="about-copy">
               <h3>
                 Hi, I&apos;m Chadi.
-                <br />
                 <span>The developer behind KAIROS.</span>
               </h3>
               <p>

@@ -49,7 +49,20 @@ for (const img of images) {
   assert.match(img, /\bwidth="\d+"/);
   assert.match(img, /\bheight="\d+"/);
 }
-const paths = ['/icon.png', '/apple-icon.png', '/opengraph-image.jpeg'];
+const iconTags = [
+  ...html.matchAll(/<link\b[^>]*\brel="(?:icon|apple-touch-icon)"[^>]*>/g),
+].map((match) => match[0]);
+const iconPaths = iconTags
+  .map((tag) => tag.match(/\bhref="([^"]+)"/)?.[1])
+  .filter(Boolean);
+assert.ok(iconPaths.some((path) => path.includes('kairos-favicon-v3.svg')));
+assert.ok(iconPaths.some((path) => path.includes('kairos-favicon-v3-16.png')));
+assert.ok(iconPaths.some((path) => path.includes('kairos-favicon-v3-32.png')));
+assert.ok(
+  !iconPaths.some((path) => /^\/(?:icon|apple-icon)\.png/.test(path)),
+  'Old illustration icons must not remain in metadata',
+);
+const paths = ['/favicon.ico', '/opengraph-image.jpeg', ...iconPaths];
 for (const img of images) {
   const src = img.match(/\ssrc="([^"]+)"/)?.[1];
   if (src) paths.push(src.replaceAll('&amp;', '&'));
@@ -88,5 +101,5 @@ console.log(
   `Production smoke checks passed: sections, ${anchorTargets.length} anchor destinations, metadata, encoded content, CSS behaviors, responsive image responses, icons, fonts, and 404.`,
 );
 console.log(
-  'This does not verify layout, JavaScript interactions, contrast, keyboard operation, or screen-reader behavior in a browser.',
+  'This does not verify layout, JavaScript interactions, contrast, keyboard operation, browser-tab favicon selection, or screen-reader behavior in a browser.',
 );
