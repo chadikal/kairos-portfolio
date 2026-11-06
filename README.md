@@ -27,11 +27,11 @@ No environment variables are required for local use. Copy `.env.example` to `.en
 
 ## Homepage
 
-- Responsive navigation with the official horizontal neon wordmark, mobile menu, contact CTA, and skip link.
-- Hero with the official transparent, border-free hourglass K artwork and both primary actions.
+- Responsive navigation with the restored white KAIROS wordmark and INTERFACE TECH subtitle, mobile menu, contact CTA, and skip link.
+- Hero with a separately saved transparent cutout of the supplied hourglass K artwork and both primary actions.
 - Selected Work: explicitly labeled Techblade and Bon Marché placeholders, plus a future-project slot.
 - Four focused frontend services.
-- Personal introduction, direct client communication, and the meaning of KAIROS.
+- Clean, text-only About section with a personal introduction, direct client communication, and the meaning of KAIROS.
 - Contact placeholders for email, Instagram, and GitHub.
 - Footer navigation and copyright.
 
@@ -44,7 +44,7 @@ src/app/                  Homepage, layout, metadata images, brand tokens and st
 src/components/ui/        Generic navigation, button link, section, and arrow
 src/components/           Project, service, and contact presentation components
 src/content/site.ts       Navigation, projects, services, contact configuration
-public/brand/             All five original supplied logo assets, unchanged
+public/brand/             Original supplied assets, unchanged; edited hero in derived/
 TOOLKIT_CANDIDATES.md      Proposed future extractions (no toolkit changes)
 docs/                     Provenance, asset inventory, and verification report
 ```
@@ -59,4 +59,4 @@ See [asset inventory](docs/ASSETS.md) for source roles and preservation details.
 
 ## Verification and next milestone
 
-See [verification](docs/VERIFICATION.md) for executed checks and remaining manual review. [Milestone 1.1](docs/MILESTONE_1_1.md) records visual refinements, asset transparency, and the pending browser review at 320, 390, 768, 1024, and 1440px. Before publication, supply approved project material, professional contact links, and the final domain. Then refine the case studies and complete device, keyboard, screen-reader, and visual review. Deployment is a separate milestone.
+See [verification](docs/VERIFICATION.md) for executed checks and remaining manual review. [Milestone 1.2](docs/MILESTONE_1_2.md) records the branding corrections, the transparent hero cutout, asset inspection proofs, and remaining browser-review limits. [Milestone 1.1](docs/MILESTONE_1_1.md) preserves the earlier refinement history. Before publication, supply approved project material, professional contact links, and the final domain. Then refine the case studies and complete device, keyboard, screen-reader, and visual review. Deployment is a separate milestone.

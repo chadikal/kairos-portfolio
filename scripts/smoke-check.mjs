@@ -39,7 +39,7 @@ assert.doesNotMatch(
   'Content must not contain encoding corruption',
 );
 const images = [...html.matchAll(/<img\s[^>]*>/g)].map((match) => match[0]);
-assert.ok(images.length >= 2);
+assert.ok(images.length >= 1, 'The homepage must contain its hero artwork');
 for (const img of images) {
   assert.match(
     img,

@@ -1,7 +1,5 @@
 ﻿import Image from 'next/image';
-import wordmark from '../../public/brand/KAIROS-Horizontal-Wordmark-Logo.png';
-import heroArtwork from '../../public/brand/Kairos-favicon.png';
-import compactLogo from '../../public/brand/Kairos-Hourglass-K-Standalone-logo.jpeg';
+import heroArtwork from '../../public/brand/derived/kairos-hourglass-transparent.png';
 import { ResponsiveNavigation } from '@/components/ui/responsive-navigation';
 import { ButtonLink } from '@/components/ui/button-link';
 import { Section } from '@/components/ui/section';
@@ -24,14 +22,8 @@ export default function HomePage() {
       </a>
       <ResponsiveNavigation
         brand={
-          <a href="#home" className="nav-brand" aria-label="KAIROS home">
-            <Image
-              src={wordmark}
-              alt="KAIROS"
-              loading="eager"
-              sizes="(max-width: 767px) 148px, 192px"
-              className="nav-wordmark"
-            />
+          <a href="#home" className="brand" aria-label="KAIROS home">
+            KAIROS<span>INTERFACE TECH</span>
           </a>
         }
         items={navigation}
@@ -133,14 +125,6 @@ export default function HomePage() {
         >
           <div className="about-grid">
             <div className="about-statement">
-              <Image
-                src={compactLogo}
-                alt="KAIROS hourglass K symbol"
-                width={80}
-                height={80}
-                sizes="80px"
-                className="compact-logo"
-              />
               <p>
                 From Design
                 <br />

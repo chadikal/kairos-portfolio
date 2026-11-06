@@ -1,19 +1,24 @@
 ﻿# Brand asset inventory
 
-All five files from the supplied `Kairos/Logos` folder are preserved byte-for-byte in `public/brand`. No logo was redrawn, recolored, cropped, or stripped of its background.
+All five original supplied files remain byte-for-byte unchanged in `public/brand`. Milestone 1.2 adds a separate edited hero derivative in `public/brand/derived`; it does not overwrite any original.
 
-| Original file                             | Current role after Milestone 1.1                                                                                                                                                                                                           |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `KAIROS-Horizontal-Wordmark-Logo.png`     | Official neon navbar wordmark, including its integrated hourglass K. Shown with Next Image at 192px wide on desktop and 148px on mobile, with intrinsic aspect ratio and all original glow preserved. The navbar has no separate subtitle. |
-| `Kairos-favicon.png`                      | Border-free standalone hourglass K in the hero, plus the existing favicon source. Despite its filename, the supplied original is a 1536 × 1024 transparent artwork suitable for the hero.                                                  |
-| `Kairos-Hourglass-K-Standalone-logo.jpeg` | The circular version remains beside the About statement. This JPEG contains a circular border and is deliberately not the hero asset.                                                                                                      |
-| `Kairos-Logo.jpeg`                        | Original full artwork retained; unchanged copy remains the Open Graph social image. No longer used in the hero.                                                                                                                            |
-| `Kairos-instagram-profile-logo.jpeg`      | Preserved for future social identity placement; not shown as an invented profile link.                                                                                                                                                     |
+| File                                       | Current role                                                                                                                                                           |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `derived/kairos-hourglass-transparent.png` | Background-extracted hero artwork, edited from the original `Kairos-favicon.png` using the built-in ImageGen tool. 1536 × 1024 PNG, real alpha, no circle or wordmark. |
+| `Kairos-favicon.png`                       | Original source preserved for provenance and existing favicon derivatives. No longer used directly in the hero.                                                        |
+| `KAIROS-Horizontal-Wordmark-Logo.png`      | Original neon horizontal asset preserved but no longer rendered in the navbar.                                                                                         |
+| `Kairos-Hourglass-K-Standalone-logo.jpeg`  | Original circular K preserved but no longer used in About or elsewhere on the homepage.                                                                                |
+| `Kairos-instagram-profile-logo.jpeg`       | Original social identity asset preserved; not rendered in About or elsewhere on the homepage.                                                                          |
+| `Kairos-Logo.jpeg`                         | Original full artwork preserved; unchanged copy remains the Open Graph social image.                                                                                   |
 
-The two navbar/hero PNGs contain actual alpha transparency. Metadata/raw pixel inspection confirmed alpha values from 0 to 254 and alpha 0 at all four canvas corners. No CSS blending, masks, artificial transparency, background removal, filters, cropping, or AI edits are used. The hero's separate CSS pseudo-element adds static ambient purple/blue lighting without altering image pixels. The image container has no visible background, frame, or border.
+The navbar restores the original clean white text `KAIROS` with its small `INTERFACE TECH` subtitle. The About section is text-only. No logo image is used in either location.
 
-The navbar PNG is 1916 × 821. Its full canvas renders approximately 82px high at 192px wide and 63px high at 148px wide. Navbar minimum heights are 88px and 72px respectively, including the original transparent margins and glow. Both images have explicit intrinsic dimensions through static imports and responsive `sizes`; the hero is preloaded and the navbar image loads eagerly.
+## Transparency correction
 
-`src/app/icon.png` and `src/app/apple-icon.png` remain the original milestone's size-only favicon derivatives. No asset or derivative was regenerated during Milestone 1.1. Artwork ownership remains with KAIROS; repository visibility does not license these assets for third-party reuse.
+The previous milestone established that the original source had an alpha channel and clear corners. That check did **not** establish that its dark matte had been removed. User review identified the remaining rectangular backdrop. Milestone 1.2 replaces that source in the hero with an edited cutout, checked visually over navy and checkerboard backgrounds as well as by reading the actual alpha pixels.
 
-All five supplied assets are still hash-identical to their originals. See `MILESTONE_1_1.md` for verification limits, including the unavailable visual browser review.
+The derivative has 895,969 fully transparent pixels and 676,895 partially transparent pixels. Its outermost edge alpha is at most 1/255. The mark retains its recognizable geometry, glass, falling sand, gradients and soft neon fringe in the inspected proofs. As an AI-assisted edit, it is not a pixel-identical extraction; fine-grain sand/glass texture and glow fidelity remain subject to brand-owner visual review. No CSS blending, masks, page-color matching, image filters, rectangle/card backgrounds, or background-removal dependencies are used.
+
+[Asset edit provenance and exact prompt](HERO_ASSET_EDIT.md) records the built-in tool and paths. [Navy proof](visual/hero-navy-review.png) and [checkerboard proof](visual/hero-checker-review.png) show the actual derivative composited at 560px and 280px image widths. These are image inspection proofs, not screenshots of a running webpage.
+
+Existing `src/app/icon.png` and `src/app/apple-icon.png` were not regenerated. Ownership remains with KAIROS; repository visibility does not license these assets for reuse.

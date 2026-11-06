@@ -153,18 +153,6 @@ img {
   justify-content: space-between;
   gap: 24px;
 }
-.nav-brand {
-  display: flex;
-  align-items: center;
-  flex: 0 0 192px;
-  width: 192px;
-  min-height: 44px;
-}
-.nav-wordmark {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 .brand {
   display: inline-flex;
   flex-direction: column;
@@ -305,25 +293,10 @@ img {
 }
 .hero-artwork {
   position: relative;
-  isolation: isolate;
   min-width: 0;
   width: 100%;
   max-width: 560px;
   justify-self: center;
-}
-.hero-artwork::before {
-  content: '';
-  position: absolute;
-  inset: 4% 3% 9%;
-  z-index: -1;
-  background:
-    radial-gradient(
-      ellipse at 35% 35%,
-      rgb(129 107 255 / 13%),
-      transparent 65%
-    ),
-    radial-gradient(ellipse at 70% 65%, rgb(76 157 255 / 9%), transparent 65%);
-  pointer-events: none;
 }
 .hero-symbol {
   display: block;
@@ -578,31 +551,16 @@ h2 {
 }
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
   gap: 64px;
-}
-.about-statement {
-  position: relative;
-  padding: 24px 32px;
-  border-left: 1px solid var(--border);
-  background: radial-gradient(
-    ellipse at 25% 25%,
-    rgb(129 107 255 / 6%),
-    transparent 70%
-  );
-}
-.compact-logo {
-  display: block;
-  border-radius: 50%;
-  margin-bottom: 22px;
 }
 .about-statement > p {
   font-family: var(--font-heading), sans-serif;
   font-size: var(--heading-size);
   line-height: var(--heading-leading);
   letter-spacing: var(--heading-tracking);
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 .about-statement .technical {
   font-size: 9px;
@@ -791,10 +749,6 @@ a.contact-channel:hover .channel-value {
   .brand span {
     font-size: 7px;
   }
-  .nav-brand {
-    flex-basis: 148px;
-    width: 148px;
-  }
   .menu-toggle {
     display: inline-flex;
     align-items: center;
@@ -943,9 +897,6 @@ a.contact-channel:hover .channel-value {
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 28px;
-  }
-  .about-statement {
-    padding: 16px 24px;
   }
   .about-statement > p {
     font-size: var(--heading-size);

@@ -2,6 +2,10 @@
 
 Date: 2026-11-06. Runtime: existing Node.js 22.20.0 and npm 10.9.3 on Windows. The runtime was selected in command-local PATH only. No global runtime, credentials, or toolkit configuration were changed.
 
+## Milestone 1.2 follow-up
+
+Restored the clean text navbar, replaced the hero source with an independently saved background-extracted PNG, and removed the circular About image and panel styling. See [Milestone 1.2](MILESTONE_1_2.md) for the current verification report, image-level navy/checkerboard proofs, and actual browser-review limitations. The earlier alpha-channel-only inspection was insufficient to rule out a dark matte; the new review checks visible compositing as well.
+
 ## Milestone 1.1 follow-up
 
 The navbar/hero asset treatment, heading tokens, and section rhythm were refined. Required checks and a fresh production smoke check passed. See [the refinement report](MILESTONE_1_1.md) for exact scope, contrast calculations, unchanged original-asset checks, and browser verification limitations at all five requested widths. No deployment performed.
