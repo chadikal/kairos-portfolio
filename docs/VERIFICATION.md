@@ -2,6 +2,10 @@
 
 Date: 2026-11-06. Runtime: existing Node.js 22.20.0 and npm 10.9.3 on Windows. The runtime was selected in command-local PATH only. No global runtime, credentials, or toolkit configuration were changed.
 
+## Upper-right cinematic spotlight
+
+See [the spotlight report](HERO_SPOTLIGHT.md) for direct reference comparison, actual Chrome hero inspection at 320/390/768/1024/1440px, quality checks and remaining device-review limits. Existing artwork, ground lighting and approved page rules are unchanged. No deployment.
+
 ## Brand fidelity and hero lighting follow-up
 
 See [the current report](BRAND_FIDELITY_AND_LIGHTING.md) for the supplied bitmap wordmark, lossless crop verification, reference-inspired ground lighting, quality checks and limited desktop browser inspection. The approved page atmosphere and spacing remain unchanged. Mobile/tablet, exact viewport sizes, footer and reduced-motion browser review remain pending; the Chrome window was minimized during responsive inspection and the available controls could not restore it. No deployment or new milestone.

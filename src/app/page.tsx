@@ -65,6 +65,7 @@ export default function HomePage() {
             </div>
             <figure className="hero-artwork">
               <div className="hero-stage">
+                <div className="hero-spotlight" aria-hidden="true" />
                 <div className="hero-ground" aria-hidden="true" />
                 <Image
                   src={heroArtwork}

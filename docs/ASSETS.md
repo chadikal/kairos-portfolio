@@ -1,5 +1,7 @@
 # Brand asset inventory
 
+The [upper-right cinematic spotlight](HERO_SPOTLIGHT.md) adds only CSS lighting behind the existing hero. No image asset was changed or generated for that follow-up; existing wordmark and ground reflections are preserved.
+
 All six supplied originals in `public/brand` remain byte-for-byte unchanged, including the newly supplied `KAIROS Interface Tech Wordmark Logo.png`. Derivatives live in `public/brand/derived`; they never overwrite source artwork.
 
 | File                                       | Current role after Milestone 1.3                                                                                   |

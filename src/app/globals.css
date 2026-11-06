@@ -322,6 +322,31 @@ img {
   position: relative;
   isolation: isolate;
 }
+.hero-spotlight {
+  /* Fade the entire field before its bounds, independently of the rotated light. */
+  position: absolute;
+  inset: -60% 0 4%;
+  overflow: clip;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse closest-side, #000 30%, transparent 100%);
+}
+.hero-spotlight::before {
+  content: '';
+  position: absolute;
+  width: 66%;
+  height: 170%;
+  left: 76%;
+  top: 37%;
+  transform: translate(-50%, -50%) rotate(35deg);
+  background: radial-gradient(
+    ellipse closest-side,
+    rgb(183 177 255 / 24%) 0%,
+    rgb(112 140 224 / 21%) 24%,
+    rgb(91 93 188 / 13%) 46%,
+    rgb(84 65 153 / 4%) 66%,
+    transparent 100%
+  );
+}
 .hero-ground {
   /* Coordinates follow the unchanged 1536 × 1024 artwork: feet at y=806,
      sand contact at x=627 and the right glass foot at x=1110. */
@@ -1035,6 +1060,7 @@ a.contact-channel:hover .channel-value {
   }
 }
 @media (forced-colors: active) {
+  .hero-spotlight,
   .hero-ground {
     display: none;
   }
