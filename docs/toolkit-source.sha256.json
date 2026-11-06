@@ -1,0 +1,74 @@
+﻿[
+  {
+    "path": "public/favicon.svg",
+    "sha256": "7025731767d18002da0c384d1b2d70cf8e3149647290264a3ecd3431ae814687"
+  },
+  {
+    "path": "src/app/globals.css",
+    "sha256": "05ddeb7f45c519848fc199c8dbbdd4d0478ed43467b81614a6a748a2312dc1ed"
+  },
+  {
+    "path": "src/app/layout.tsx",
+    "sha256": "02346eca50c3fae08b4aee16a6d18640650cf5b7042c748c1d2faeaa4d3fb75b"
+  },
+  {
+    "path": "src/app/page.tsx",
+    "sha256": "17d28823c93549e4190daff0501e14f9586ffe193447f1816277c44f076ff6dc"
+  },
+  {
+    "path": ".editorconfig",
+    "sha256": "a6b98ea7cb6d61ed8d430dd0dffa46c87012b5cf859d4ce7207898954951fdcd"
+  },
+  {
+    "path": ".env.example",
+    "sha256": "e941519812d737e60464be9d982c4827e299d97b8e494d353a256b7f9ac2eb2e"
+  },
+  {
+    "path": ".gitattributes",
+    "sha256": "67c8553872a8e7d08366c8ec66767ef13938ea04f749c3bcdbe050c664d340af"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "fc0258b4c38069defb4a505ff0a9490cecb39481706f4ebc0dd1611f3ed96e80"
+  },
+  {
+    "path": ".nvmrc",
+    "sha256": "a0e27aeeac42d6102f4ff2bce40d8fb011c07e5cb28eff3c9d77e68df29e5dd6"
+  },
+  {
+    "path": ".prettierignore",
+    "sha256": "e4f3c69c2aa69e5085daea75841af2159385cae8581a5cbe195f42f026976c38"
+  },
+  {
+    "path": ".prettierrc.json",
+    "sha256": "e51419e8206a0a5493e85ef1f4dea080982dc9187992bb253220a93d0784f6b2"
+  },
+  {
+    "path": "AGENTS.md",
+    "sha256": "a8c62dea87b15cb6903d5abfe2c670cbaca09b7e29eaa3d018f18b854333521b"
+  },
+  {
+    "path": "eslint.config.mjs",
+    "sha256": "51fd233c38b2332fa0282a47db01b7a489ceb378a7b7c3b025cc15f529e86f37"
+  },
+  {
+    "path": "next.config.ts",
+    "sha256": "35357c1edf15f6daab98537ab9915dea411de889453997fd160ec57bec0ab94b"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "adfab7a899d18e9f2b196fec3118023f15553892753798fa5e99676cf89752a8"
+  },
+  {
+    "path": "package.json",
+    "sha256": "6b835a8965716b4494126511ce0ce9a1674db128ad93be73cff0b1b49090649e"
+  },
+  {
+    "path": "README.md",
+    "sha256": "47c359486d9d36d80562ecf48a8d0e13db74e80db5bb0a7214cc3c77882cbccd"
+  },
+  {
+    "path": "tsconfig.json",
+    "sha256": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c"
+  }
+]
