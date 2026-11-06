@@ -2,6 +2,10 @@
 
 Date: 2026-11-06. Runtime: existing Node.js 22.20.0 and npm 10.9.3 on Windows. The runtime was selected in command-local PATH only. No global runtime, credentials, or toolkit configuration were changed.
 
+## Milestone 1.3 follow-up
+
+Reduced the baked-in hero halo using the original as a detail reference, added a continuous static CSS atmosphere, and aligned About heading caps on desktop. See [Milestone 1.3](MILESTONE_1_3.md) for the latest checks, contrast bound, artwork proofs, and browser-verification limits.
+
 ## Milestone 1.2 follow-up
 
 Restored the clean text navbar, replaced the hero source with an independently saved background-extracted PNG, and removed the circular About image and panel styling. See [Milestone 1.2](MILESTONE_1_2.md) for the current verification report, image-level navy/checkerboard proofs, and actual browser-review limitations. The earlier alpha-channel-only inspection was insufficient to rule out a dark matte; the new review checks visible compositing as well.

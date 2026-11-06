@@ -1,4 +1,6 @@
-﻿# Hero asset edit provenance
+# Hero asset edit provenance
+
+Historical Milestone 1.2 record. The currently selected hero is the sharper Milestone 1.3 sibling; see [the current edit record](M13_ASSET_EDIT.md). The older derivative is retained unchanged for comparison.
 
 - Mode: built-in `image_gen.imagegen`, edit / `background-extraction`, transparent output requested. No API key or fallback CLI was used.
 - Original source: `public/brand/Kairos-favicon.png`, unchanged.

@@ -43,6 +43,35 @@ body {
   line-height: 1.7;
   overflow-wrap: anywhere;
 }
+main {
+  background-image:
+    radial-gradient(
+      ellipse 85% 22% at 90% 1%,
+      rgb(129 107 255 / 6.5%),
+      transparent 75%
+    ),
+    radial-gradient(
+      ellipse 90% 24% at -10% 6%,
+      rgb(76 157 255 / 4%),
+      transparent 76%
+    ),
+    radial-gradient(
+      ellipse 85% 24% at 95% 40%,
+      rgb(129 107 255 / 2.8%),
+      transparent 76%
+    ),
+    radial-gradient(
+      ellipse 95% 22% at 2% 68%,
+      rgb(231 139 203 / 1.8%),
+      transparent 78%
+    ),
+    radial-gradient(
+      ellipse 90% 20% at 80% 92%,
+      rgb(76 157 255 / 2%),
+      transparent 78%
+    );
+  background-repeat: no-repeat;
+}
 ::selection {
   background: var(--primary);
   color: var(--foreground);
@@ -203,11 +232,6 @@ img {
 }
 .hero {
   position: relative;
-  background: radial-gradient(
-    ellipse at 80% 25%,
-    rgb(129 107 255 / 7%),
-    transparent 55%
-  );
 }
 .hero-grid {
   display: grid;
@@ -293,10 +317,29 @@ img {
 }
 .hero-artwork {
   position: relative;
+  isolation: isolate;
   min-width: 0;
   width: 100%;
   max-width: 560px;
   justify-self: center;
+}
+.hero-artwork::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 10%;
+  z-index: -1;
+  background-image:
+    radial-gradient(
+      ellipse 70% 70% at 40% 40%,
+      rgb(129 107 255 / 6%),
+      transparent 75%
+    ),
+    radial-gradient(
+      ellipse 75% 65% at 65% 65%,
+      rgb(76 157 255 / 3.5%),
+      transparent 78%
+    );
+  pointer-events: none;
 }
 .hero-symbol {
   display: block;
@@ -360,10 +403,6 @@ h2 {
   color: var(--muted);
   font-size: 13px;
   padding-bottom: 3px;
-}
-#work {
-  background: linear-gradient(180deg, rgb(18 23 43 / 35%), transparent);
-  border-top: 1px solid rgb(48 54 90 / 40%);
 }
 .project-grid {
   display: grid;
@@ -496,9 +535,6 @@ h2 {
   color: var(--muted);
   font-size: 9px;
 }
-#services {
-  border-top: 1px solid rgb(48 54 90 / 40%);
-}
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -546,14 +582,17 @@ h2 {
   margin-left: auto;
   font-size: 9px;
 }
-#about {
-  border-top: 1px solid rgb(48 54 90 / 40%);
-}
 .about-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
   gap: 64px;
+}
+.about-statement,
+.about-copy {
+  align-self: start;
+  margin-block: 0;
+  padding-block: 0;
 }
 .about-statement > p {
   font-family: var(--font-heading), sans-serif;
@@ -565,9 +604,6 @@ h2 {
 .about-statement .technical {
   font-size: 9px;
   color: var(--muted);
-}
-.about-copy {
-  padding-top: 0;
 }
 .about-copy h3 {
   font-size: clamp(22px, 2vw, 26px);
@@ -598,12 +634,6 @@ h2 {
   color: var(--muted);
   font-size: 12px;
   line-height: 1.9;
-}
-.contact-section {
-  background:
-    radial-gradient(ellipse at 15% 90%, rgb(129 107 255 / 8%), transparent 65%),
-    var(--surface);
-  border-block: 1px solid var(--border);
 }
 .contact-grid {
   display: grid;
@@ -697,6 +727,15 @@ a.contact-channel:hover .channel-value {
 }
 :lang(ar) {
   font-family: var(--font-arabic), sans-serif;
+}
+@media (min-width: 768px) {
+  @supports (text-box-trim: trim-start) and (text-box-edge: cap alphabetic) {
+    .about-statement > p,
+    .about-copy > h3 {
+      text-box-trim: trim-start;
+      text-box-edge: cap alphabetic;
+    }
+  }
 }
 @media (min-width: 1500px) {
   .hero-grid {
@@ -901,9 +940,6 @@ a.contact-channel:hover .channel-value {
   .about-statement > p {
     font-size: var(--heading-size);
   }
-  .about-copy {
-    padding-top: 0;
-  }
   .contact-channel {
     padding-block: 24px;
   }
@@ -975,6 +1011,10 @@ a.contact-channel:hover .channel-value {
   }
 }
 @media (forced-colors: active) {
+  main,
+  .hero-artwork::before {
+    background-image: none;
+  }
   .gradient-text {
     background: none;
     -webkit-text-fill-color: currentColor;

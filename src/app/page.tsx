@@ -1,5 +1,5 @@
 ﻿import Image from 'next/image';
-import heroArtwork from '../../public/brand/derived/kairos-hourglass-transparent.png';
+import heroArtwork from '../../public/brand/derived/kairos-hourglass-crisp.png';
 import { ResponsiveNavigation } from '@/components/ui/responsive-navigation';
 import { ButtonLink } from '@/components/ui/button-link';
 import { Section } from '@/components/ui/section';

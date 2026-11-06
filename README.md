@@ -28,7 +28,7 @@ No environment variables are required for local use. Copy `.env.example` to `.en
 ## Homepage
 
 - Responsive navigation with the restored white KAIROS wordmark and INTERFACE TECH subtitle, mobile menu, contact CTA, and skip link.
-- Hero with a separately saved transparent cutout of the supplied hourglass K artwork and both primary actions.
+- Hero with a separately saved, crisp transparent cutout of the supplied hourglass K artwork and both primary actions.
 - Selected Work: explicitly labeled Techblade and Bon Marché placeholders, plus a future-project slot.
 - Four focused frontend services.
 - Clean, text-only About section with a personal introduction, direct client communication, and the meaning of KAIROS.
@@ -51,7 +51,7 @@ docs/                     Provenance, asset inventory, and verification report
 
 The App Router renders the page on the server. Only the responsive navigation requires a client boundary. Next Image provides responsive image sizing; `next/font` optimizes and self-hosts Space Grotesk, Inter, IBM Plex Mono, and the prepared IBM Plex Sans Arabic font. Arabic typography is prepared; translated content and RTL layouts are future work. No animation library, backend, contact form, or analytics is included.
 
-CSS variables centralize brand colors and typography. Layouts switch to stacked content on small screens, with reduced-motion and forced-color support. The mobile disclosure closes on Escape, link selection, and transition to desktop. Escape returns focus to the toggle.
+CSS variables centralize brand colors and typography. A continuous, low-opacity radial-gradient atmosphere sits on navy, strongest near the hero; it uses no background image, animation, canvas, or blend modes. Layouts switch to stacked content on small screens, with reduced-motion and forced-color support. The mobile disclosure closes on Escape, link selection, and transition to desktop. Escape returns focus to the toggle.
 
 ## Assets and ownership
 
@@ -59,4 +59,4 @@ See [asset inventory](docs/ASSETS.md) for source roles and preservation details.
 
 ## Verification and next milestone
 
-See [verification](docs/VERIFICATION.md) for executed checks and remaining manual review. [Milestone 1.2](docs/MILESTONE_1_2.md) records the branding corrections, the transparent hero cutout, asset inspection proofs, and remaining browser-review limits. [Milestone 1.1](docs/MILESTONE_1_1.md) preserves the earlier refinement history. Before publication, supply approved project material, professional contact links, and the final domain. Then refine the case studies and complete device, keyboard, screen-reader, and visual review. Deployment is a separate milestone.
+See [verification](docs/VERIFICATION.md) for executed checks and remaining manual review. [Milestone 1.3](docs/MILESTONE_1_3.md) records the crisper artwork, atmospheric CSS, About alignment and browser-review limits. [Milestone 1.2](docs/MILESTONE_1_2.md) records the preceding branding corrections. [Milestone 1.1](docs/MILESTONE_1_1.md) preserves the earlier refinement history. Before publication, supply approved project material, professional contact links, and the final domain. Then refine the case studies and complete device, keyboard, screen-reader, and visual review. Deployment is a separate milestone.
